@@ -15,6 +15,7 @@ li:hover {
 
 a {
     text-decoration: none;
+    color: #444;
 }
 
 /* Body */
@@ -27,7 +28,57 @@ a {
 
 /* Header */
 .header {   
+    display: flex;
+    justify-content: flex-end;
+}
 
+.header ul {
+    display: flex;
+    align-items: center;
+}
+
+.header ul img {
+    border-radius: 50%;
+}
+
+.header ul li {
+    margin: 0 10px;
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.hero .form-container form {
+    position: relative;
+}
+
+.hero .form-container form label.search {
+    position: absolute;
+    left: 20px;
+    top: 14px;
+}
+.hero .form-container form label.search i {
+    color: #999999;
+
+}
+.hero .form-container form label.mic {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+
+}
+.hero .form-container form input {
+    padding: 16px;
+    width: 300px;
+    border: 1px solid #c7c7c7;
+    border-radius: 30px;
 }
 
 /* Footer */ 
@@ -44,7 +95,7 @@ a {
 footer h3 {
     color: #444444;
     font-weight: 400;
-    border-bottom: 2px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
     padding: 0 30px 10px;
 }
 
